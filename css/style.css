@@ -274,7 +274,7 @@ color: #0D0F16;
 }
 .item2 {
   grid-area: two;
-  background-image: url(../img/project02.png);
+  background-image: url(../img/kindnesstowardshumanity.jpg);
 }
 .item3 { grid-area: three; background-image: url(../img/project03.png); }
 .item4 { grid-area: four; background-image: url(../img/project04.png); }
