@@ -129,9 +129,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Email**: [your-email@example.com]
-- **Phone**: [+1 234 567 8900]
-- **Location**: [Your Location]
+- Email: nexgendevelopers11@gmail.com
+- Phone: 6006161726
+- Location: Srinagar, J&K
 
 ## 🙏 Acknowledgments
 
