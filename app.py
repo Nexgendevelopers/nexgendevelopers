@@ -73,8 +73,8 @@ def contact():
 
         user_msg = Message(
             subject='Thank you for contacting NexGen Developers',
-            sender=app.config['MAIL_USERNAME'],  # Sender email
-            recipients=[email]  # Form submitter's email
+            sender=app.config['MAIL_USERNAME'],  
+            recipients=[email] 
         )
         
         user_msg.body = f"""
