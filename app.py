@@ -4,10 +4,8 @@ import os
 import logging
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
 load_dotenv()
 
-# Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -16,19 +14,16 @@ app = Flask(__name__,
     template_folder='templates'  
 )
 
-# Configure Flask-Mail
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')  # Sender email
-app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')  # Sender password
-app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_USERNAME')  # Sender email
+app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')  
+app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD') 
+app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_USERNAME')  
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'your-secret-key-here')
 
-# Get receiver email from environment
 RECEIVER_EMAIL = os.getenv('RECEIVER_EMAIL')
 
-# Initialize Flask-Mail
 mail = Mail(app)
 
 @app.route('/')
@@ -59,10 +54,9 @@ def contact():
         # Create email message for admin (sent to receiver email)
         admin_msg = Message(
             subject=f'New Contact Form Submission - {service}',
-            sender=app.config['MAIL_USERNAME'],  # Sender email
-            recipients=[RECEIVER_EMAIL],  # Receiver email
-            reply_to=email  # Original form submitter's email
-        )
+            sender=app.config['MAIL_USERNAME'], 
+            recipients=[RECEIVER_EMAIL], 
+            reply_to=email  
 
         admin_msg.body = f"""
         New Contact Form Submission:
@@ -74,11 +68,9 @@ def contact():
         Message: {message}
         """
 
-        # Send email to admin
         logger.info(f"Sending admin notification email to {RECEIVER_EMAIL}")
         mail.send(admin_msg)
 
-        # Create confirmation email for user
         user_msg = Message(
             subject='Thank you for contacting NexGen Developers',
             sender=app.config['MAIL_USERNAME'],  # Sender email
@@ -94,7 +86,6 @@ def contact():
         NexGen Developers Team
         """
 
-        # Send confirmation email to user
         logger.info(f"Sending confirmation email to {email}")
         mail.send(user_msg)
 
@@ -111,9 +102,7 @@ def contact():
             'message': 'An error occurred while sending your message. Please try again later.'
         }), 500
 
-# For local development
 if __name__ == '__main__':
     app.run(debug=True)
 
-# For Vercel deployment
 app = app
