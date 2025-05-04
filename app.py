@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, url_for
 from flask_mail import Mail, Message
 import os
 from dotenv import load_dotenv
@@ -6,8 +6,11 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-# Initialize Flask app
-app = Flask(__name__)
+# Initialize Flask app with explicit static folder
+app = Flask(__name__,
+    static_folder='static',
+    static_url_path='/static'
+)
 
 # Basic configuration
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
