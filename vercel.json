@@ -8,6 +8,10 @@
                 "maxLambdaSize": "15mb",
                 "runtime": "python3.9"
             }
+        },
+        {
+            "src": "static/**",
+            "use": "@vercel/static"
         }
     ],
     "routes": [
@@ -24,4 +28,4 @@
         "PYTHONPATH": ".",
         "FLASK_ENV": "production"
     }
-}
+} 
