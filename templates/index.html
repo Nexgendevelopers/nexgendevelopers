@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NexGen Developers - Freelancers specializing in AI/ML, web & app development, chatbots, SEO, and graphic design. We help startups and businesses create stunning digital experiences.">
+  <meta name="keywords" content="web development, app development, AI, machine learning, chatbots, SEO, graphic design, freelancers, NexGen Developers">
+  <meta name="author" content="NexGen Developers">
+  
+  <meta property="og:title" content="NexGen Developers - Freelancers for AI, Web, App Development & More">
+  <meta property="og:description" content="We are freelancers helping startups and local businesses with AI/ML, chatbots, web & app development, SEO, and graphic design to create stunning digital experiences.">
+  <meta property="og:image" content="{{ url_for('static', filename='img/logo.png') }}">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:type" content="website">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NexGen Developers - Freelancers for AI, Web, App Development & More">
+  <meta name="twitter:description" content="We are freelancers helping startups and local businesses with AI/ML, chatbots, web & app development, SEO, and graphic design to create stunning digital experiences.">
+  <meta name="twitter:image" content="{{ url_for('static', filename='img/logo.png') }}">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='Favicon/apple-touch-icon.png') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/logo.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/logo.png') }}">
+  <link rel="manifest" href="{{ url_for('static', filename='Favicon/site.webmanifest') }}">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+  <title>NexGen Developers - Freelancers for AI, Web, App Development & More</title>
+  
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NexGen Developers",
+      "url": "https://yourwebsite.com",
+      "logo": "https://yourwebsite.com/img/logo.png",
+      "description": "Freelancers specializing in AI/ML, web & app development, chatbots, SEO, and graphic design.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1 (555) 123-4567",
+        "contactType": "customer service",
+        "email": "nexgendevelopers11@gmail.com",
+        "areaServed": "Global"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/105880683/",
+        "https://www.facebook.com/share/1924Qev3Su/",
+        "https://www.instagram.com/nexgendevelopers_"
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">
+          <img src="{{ url_for('static', filename='img/logo.png') }}" alt="NexGen Developers Logo" class="logo">
+        </a>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+          <div class="hamburger-line line1"></div>
+          <div class="hamburger-line line2"></div>
+          <div class="hamburger-line line3"></div>
+        </div>
+
+        <div class="navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Rest of the HTML remains unchanged -->
+  <!-- Hero Section -->
+  <div id="home">
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <span class="subtitle">Team of Freelancers</span>
+          <h1 class="main-title">We are <span>NexGen Developers</span></h1>
+          <p class="description">We are freelancers helping startups and local businesses with AI/ML, chatbots, web & app development, SEO, and graphic design to create stunning digital experiences that make a lasting impact.</p>
+          <a href="#contact" class="cta-button">Get Started</a>
+          <a href="https://wa.me/message/X7TDAPSVHSFNC1" class="cta-button">WhatsApp</a>    
+        </div>
+        <div class="hero-image">
+          <img src="{{ url_for('static', filename='img/home.png') }}" alt="NexGen Developers Team" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why NexGen Developers</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Where Innovation Meets Excellence</h3>
+          <p>We are <strong>NexGen Developers</strong>, a collective of 5-10 engineering professionals from leading tech companies united to deliver premium freelance services. Our team combines diverse expertise with a passion for technological innovation, enabling us to tackle complex challenges with precision and creativity.</p>
+          <div class="about-features">
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Web & App Development</h4>
+                <p>Crafting responsive websites and scalable applications that drive business growth.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="feature-text">
+                <h4>AI & Machine Learning</h4>
+                <p>Implementing intelligent solutions that automate processes and generate valuable insights.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-comments"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Chatbot Development</h4>
+                <p>Building intelligent conversational interfaces that enhance customer experience.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Digital Marketing</h4>
+                <p>Developing comprehensive strategies to increase your online presence and drive customer engagement.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Search Engine Optimization</h4>
+                <p>Implementing data-driven SEO tactics to improve rankings and drive organic traffic to your business.</p>
+              </div>
+            </div>
+          </div>
+          <p class="about-mission">Our mission is to help startups and local businesses build high-quality digital solutions that drive growth and success in the digital landscape.</p>
+          <div class="about-cta">
+            <a href="#contact" class="btn btn-primary">HIRE US</a>
+            <a href="#services" class="btn btn-outline">OUR SERVICES</a>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="{{ url_for('static', filename='img/aboutus.png') }}" alt="NexGen Developers Team" class="img-fluid">
+          <div class="experience-badge">
+            <span class="years">2+</span>
+            <span class="text">Years of Excellence</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <div id="projects">
+    <div class="section">
+      <div class="container-fluid">
+        <p class="title">-PROJECTS</p>
+        <div class="poject-section">
+          <h2>FEATURED WORK</h2>
+          <p class="para">We are passionate about building scalable Websites, creating effective solutions, and learning every day to grow professionally in the IT field.</p>
+        </div>
+        <div class="project-grid">
+          <div class="item1">
+            <img src="{{ url_for('static', filename='img/project1.jpg') }}" alt="Project 1" class="project-image">
+            <div class="layer">
+              <a href="https://thehotelseaview.in" target="_blank">Live Web</a>
+            </div>
+          </div>
+          <div class="item2">
+            <img src="{{ url_for('static', filename='img/project2.jpg') }}" alt="Project 2" class="project-image">
+            <div class="layer">
+              <a href="https://kindnesstowardshumanity.in" target="_blank">Live Web</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div id="services">
+    <section class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Services We Provide</h2>
+          <p class="section-description">The goal is not just to build a website or an app, but to grow your business.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="{{ url_for('static', filename='img/1.png') }}" alt="Web Development">
+            </div>
+            <div class="service-content">
+              <h3>Web Development</h3>
+              <p>We build modern, responsive, and high-performance websites tailored to your business needs, ensuring seamless user experiences.</p>
+              <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="{{ url_for('static', filename='img/2.png') }}" alt="App Development">
+            </div>
+            <div class="service-content">
+              <h3>App Development</h3>
+              <p>We develop powerful mobile and web applications using the latest technologies, ensuring scalability and performance.</p>
+              <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="{{ url_for('static', filename='img/5.png') }}" alt="AI & ML Solutions">
+            </div>
+            <div class="service-content">
+              <h3>AI & ML Solutions</h3>
+              <p>We integrate Artificial Intelligence and Machine Learning to automate processes, enhance decision-making, and create smart applications.</p>
+              <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="{{ url_for('static', filename='img/6.png') }}" alt="Chatbots Development">
+            </div>
+            <div class="service-content">
+              <h3>Chatbot Development</h3>
+              <p>Enhance customer engagement with AI-powered chatbots that provide instant and intelligent support across platforms.</p>
+              <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="{{ url_for('static', filename='img/4.png') }}" alt="SEO & Digital Marketing">
+            </div>
+            <div class="service-content">
+              <h3>SEO & Digital Marketing</h3>
+              <p>Boost your online presence with expert SEO, Google Ads, and digital marketing strategies tailored to your business.</p>
+              <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="{{ url_for('static', filename='img/7.png') }}" alt="Graphic Design">
+            </div>
+            <div class="service-content">
+              <h3>Graphic Design</h3>
+              <p>From logos to social media posts, we craft visually compelling designs that strengthen your brand identity.</p>
+              <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="section">
+    <div class="container-fluid">
+      <h1><p class="title"><b>-SKILLS</b></p></h1>
+      <div class="skill-section">
+        <h2>AREA OF EXPERTISE</h2>
+        <p class="para">Let's kickstart your project and collaborate to build something amazing. We bring our expertise to make your next project shine.</p>
+      </div>
+      <div class="skills">
+        <div class="skill border1 border_right">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/html.png') }}" alt="HTML">
+            <p>HTML</p>
+          </div>
+        </div>
+        <div class="skill border1">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/css.png') }}" alt="CSS">
+            <p>CSS</p>
+          </div>
+        </div>
+        <div class="skill border1 border3">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="JavaScript">
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="skill border1 border_bottom borderSL">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/react (2).png') }}" alt="React">
+            <p>React</p>
+          </div>
+        </div>
+        <div class="skill border1">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/python.svg') }}" alt="Python">
+            <p>Python</p>
+          </div>
+        </div>
+        <div class="skill border1 border_right">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/artificial-intelligence.svg') }}" alt="AI/ML">
+            <p>AI/ML</p>
+          </div>
+        </div>
+        <div class="skill border1">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/fastapi.svg') }}" alt="FastAPI">
+            <p>FastAPI</p>
+          </div>
+        </div>
+        <div class="skill border1 border_right">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/flask.svg') }}" alt="Flask">
+            <p>Flask</p>
+          </div>
+        </div>
+        <div class="skill border1">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/django.svg') }}" alt="Django">
+            <p>Django</p>
+          </div>
+        </div>
+        <div class="skill border1">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/vision-2.svg') }}" alt="Computer Vision">
+            <p>Computer Vision</p>
+          </div>
+        </div>
+        <div class="skill border1 border_right border7">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/mysql.svg') }}" alt="SQL">
+            <p>SQL</p>
+          </div>
+        </div>
+        <div class="skill border1">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/mongodb.svg') }}" alt="MongoDB">
+            <p>MongoDB</p>
+          </div>
+        </div>
+        <div class="skill border1 border_bottom borderSL">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/download.png') }}" alt="Canva">
+            <p>Canva</p>
+          </div>
+        </div>
+        <div class="skill border1 border_right border7">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/WordPress.png') }}" alt="Wordpress">
+            <p>Wordpress</p>
+          </div>
+        </div>
+        <div class="skill border1 border_bottom borderSL">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/Figma.png') }}" alt="Figma">
+            <p>Figma</p>
+          </div>
+        </div>
+        <div class="skill border1">
+          <div class="items">
+            <img src="{{ url_for('static', filename='img/Adobe Photoshop.png') }}" alt="Adobe PhotoShop">
+            <p>Adobe PhotoShop</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact">
+    <section class="contact-main-section">
+      <div class="contact-main-container">
+        <div class="contact-main-header">
+          <h2 class="contact-main-title"><b>Contact Us</b></h2>
+          <p class="contact-main-description">Ready to bring your ideas to life? We're here to help you succeed.</p>
+        </div>
+        <div class="contact-main-wrapper">
+          <div class="contact-main-info">
+            <div class="contact-main-image">
+              <img src="{{ url_for('static', filename='img/contact.png') }}" alt="Contact NexGen Developers">
+            </div>
+            <div class="contact-main-info-box">
+              <div class="contact-main-info-item">
+                <div class="contact-main-info-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-main-info-content">
+                  <h4>Phone</h4>
+                  <a href="tel:+917051732616" class="contact-main-link">+91 705-173-2616</a>
+                  <a href="tel:+917889629640" class="contact-main-link">+91 788-962-9640</a>
+                </div>
+              </div>
+              <div class="contact-main-info-item">
+                <div class="contact-main-info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-main-info-content">
+                  <h4>Email</h4>
+                  <a href="mailto:nexgendevelopers11@gmail.com" class="contact-main-link">nexgendevelopers11@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-main-info-item">
+                <div class="contact-main-info-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-main-info-content">
+                  <h4>Address</h4>
+                  <p>Srinagar, Jammu and Kashmir, India</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-main-about">
+              <h4>About Us</h4>
+              <p>We are freelancers helping startups and local businesses with AI/ML, chatbots, web & app development, SEO, and graphic design to create stunning digital experiences.</p>
+            </div>
+            <!-- <div class="footer-main-social-links">
+              <a href="https://www.facebook.com/share/1924Qev3Su/" class="footer-main-social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/company/105880683/" class="footer-main-social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/company/105880683/" class="footer-main-social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/nexgendevelopers_?igsh=MTJiczF6aDNxbjB2eg==" class="footer-main-social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="https://github.com/Nexgendevelopers" class="footer-main-social-icon"><i class="fab fa-github"></i></a>
+            </div> -->
+          </div>
+          <div class="contact-main-form">
+            <h3>Send Us a Message</h3>
+            <form id="contactMainForm" onsubmit="submitForm(event)">
+              <div class="contact-main-form-group">
+                <label for="contactMainName">Full Name</label>
+                <input type="text" id="contactMainName" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="contact-main-form-group">
+                <label for="contactMainPhone">Phone Number</label>
+                <div class="contact-main-phone-input">
+                  <select id="contactMainCountryCode" name="countryCode">
+                    <option value="+1">+1 (USA)</option>
+                    <option value="+44">+44 (UK)</option>
+                    <option value="+91">+91 (India)</option>
+                    <option value="+61">+61 (Australia)</option>
+                    <option value="+49">+49 (Germany)</option>
+                    <option value="+49">Other Country</option>
+                  </select>
+                  <input type="tel" id="contactMainPhone" name="phone" placeholder="Phone Number" required>
+                </div>
+              </div>
+              <div class="contact-main-form-group">
+                <label for="contactMainEmail">Email Address</label>
+                <input type="email" id="contactMainEmail" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="contact-main-form-group">
+                <label for="contactMainService">Service You Need</label>
+                <select id="contactMainService" name="service" required>
+                  <option value="">Select a Service</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="App Development">App Development</option>
+                  <option value="AI & ML Solutions">AI & ML Solutions</option>
+                  <option value="Chatbot Development">Chatbot Development</option>
+                  <option value="SEO & Digital Marketing">SEO & Digital Marketing</option>
+                  <option value="Graphic Design">Graphic Design</option>
+                  <option value="Other Services">Other Services</option>
+                </select>
+              </div>
+              <div class="contact-main-form-group">
+                <label for="contactMainMessage">Your Message</label>
+                <textarea id="contactMainMessage" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+              </div>
+              <button type="submit" class="contact-main-submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer-main">
+    <div class="footer-main-container">
+      <div class="footer-main-row">
+        <div class="footer-main-column">
+          <h3>About</h3>
+          <p>We are freelancers helping startups and local businesses with AI/ML, chatbots, web & app development, SEO, and graphic design to create stunning digital experiences that make a lasting impact.</p>
+        </div>
+        <div class="footer-main-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-main-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-main-column">
+          <h3>Services</h3>
+          <ul class="footer-main-links">
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">App Development</a></li>
+            <li><a href="#services">Digital Marketing & SEO</a></li>
+            <li><a href="#services">AI & ML</a></li>
+          </ul>
+        </div>
+        <div class="footer-main-column">
+          <h3>Contact</h3>
+          <ul class="footer-main-contact">
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+917051732616" class="footer-main-contact-link">+91 705-173-2616</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+917889629640" class="footer-main-contact-link">+91 788-962-9640</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+917889593950" class="footer-main-contact-link">+91 788-959-3950</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:nexgendevelopers11@gmail.com" class="footer-main-contact-link">nexgendevelopers11@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-main-divider"></div>
+      <div class="footer-main-details">
+        <div class="footer-main-social">
+          <h4>Connect With Us</h4>
+          <div class="footer-main-social-links">
+            <a href="https://www.facebook.com/share/1924Qev3Su/" class="footer-main-social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/105880683/" class="footer-main-social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/105880683/" class="footer-main-social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/nexgendevelopers_?igsh=MTJiczF6aDNxbjB2eg==" class="footer-main-social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Nexgendevelopers" class="footer-main-social-icon"><i class="fab fa-github"></i></a>
+          </div>
+          <br>
+          <h5>© 2025 NexGen Developers. All Rights Reserved.</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburger = document.querySelector('.hamburger');
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+
+      hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navbarCollapse.classList.toggle('active');
+      });
+
+      // Close menu when a nav link is clicked
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          hamburger.classList.remove('active');
+          navbarCollapse.classList.remove('active');
+        });
+      });
+    });
+
+    function submitForm(event) {
+      event.preventDefault();
+      
+      const form = event.target;
+      const formData = new FormData(form);
+      
+      // Show loading state
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+
+      // Clear any previous error messages
+      const errorDiv = form.querySelector('.error-message');
+      if (errorDiv) {
+        errorDiv.remove();
+      }
+
+      fetch('/api/contact', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.status === 'success') {
+          // Show success message
+          const successDiv = document.createElement('div');
+          successDiv.className = 'alert alert-success mt-3';
+          successDiv.textContent = data.message;
+          form.appendChild(successDiv);
+          
+          // Reset form
+          form.reset();
+          
+          // Remove success message after 5 seconds
+          setTimeout(() => {
+            successDiv.remove();
+          }, 5000);
+        } else {
+          // Show error message
+          const errorDiv = document.createElement('div');
+          errorDiv.className = 'alert alert-danger mt-3';
+          errorDiv.textContent = data.message || 'An error occurred. Please try again.';
+          form.appendChild(errorDiv);
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        // Show error message
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'alert alert-danger mt-3';
+        errorDiv.textContent = 'Network error. Please check your connection and try again.';
+        form.appendChild(errorDiv);
+      })
+      .finally(() => {
+        // Reset button state
+        submitBtn.textContent = originalBtnText;
+        submitBtn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>
