@@ -43,8 +43,8 @@ A modern, responsive website for NexGen Developers built with Flask and deployed
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/nexgen-developers.git
-   cd nexgen-developers
+   git clone https://github.com/your-username/nexgendevelopers.git
+   cd nexgendevelopers
    ```
 
 2. Create and activate virtual environment:
@@ -88,7 +88,7 @@ A modern, responsive website for NexGen Developers built with Flask and deployed
 ## 📁 Project Structure
 
 ```
-nexgen-developers/
+nexgendevelopers/
 ├── app.py              # Flask application
 ├── requirements.txt    # Python dependencies
 ├── vercel.json        # Vercel configuration
@@ -119,9 +119,6 @@ nexgen-developers/
    - RECEIVER_EMAIL
    - SECRET_KEY
 
-## 🤝 Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
 ## 📝 License
 
