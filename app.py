@@ -77,5 +77,9 @@ def contact():
             'message': 'An error occurred while sending your message. Please try again later.'
         }), 500
 
+# For Local
+
+if __name__=='__main__':
+    app.run(host="0.0.0.0",debug=True)
 # For Vercel
 app = app
